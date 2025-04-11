@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/material_dynamic_neutral90">
+
+    <!-- Label above value input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the number to convert:"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp" />
+
+    <!-- Text input for number -->
+    <EditText
+        android:id="@+id/TextToConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g., 30"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:background="@color/white"/>
+
+    <!-- Label above unit type dropdown -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the category (Length, Weight, Temp):"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp" />
+
+    <!-- Spinner for category -->
+    <Spinner
+        android:id="@+id/UnitCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Label above source unit -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the unit you’re converting from:"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp" />
+
+    <!-- Spinner for source unit -->
+    <Spinner
+        android:id="@+id/SourceUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Label above destination unit -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the unit you want to convert to:"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp" />
+
+    <!-- Spinner for destination unit -->
+    <Spinner
+        android:id="@+id/DestinationUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Button to perform conversion -->
+    <Button
+        android:id="@+id/ConvertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Result text area -->
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversion result will be displayed here"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
